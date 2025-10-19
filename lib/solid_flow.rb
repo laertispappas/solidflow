@@ -13,6 +13,7 @@ require "thread"
 require "digest"
 
 loader = Zeitwerk::Loader.for_gem
+loader.ignore("#{__dir__}/solidflow.rb")
 loader.ignore("#{__dir__}/../app")
 loader.setup
 

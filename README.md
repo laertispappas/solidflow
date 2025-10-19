@@ -7,7 +7,7 @@
 Add this line to your application's Gemfile:
 
 ```ruby
-gem "solidflow", path: "solidflow"
+gem "solidflow"
 ```
 
 Then run `bundle install` and install the migrations:
@@ -66,5 +66,3 @@ bin/solidflow query <execution_id> status
 execution = SolidFlow::Testing.start_and_drain(OrderFulfillmentWorkflow, order_id: "ORD-1")
 expect(execution.state).to eq("completed")
 ```
-
-See `solid_flow_instructions.md` for the full architecture and feature specification.
